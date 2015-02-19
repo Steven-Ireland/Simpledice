@@ -1,32 +1,63 @@
 <resources>
 
+<color name="background">#efefef</color>
+<color name="dark">#1d1d1d</color>
+<color name="light">#4d4d4d</color>
+
+
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/dark</item>
     </style>
     
     <style name="smoothButton">
         <item name="android:layout_margin">0dp</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:background">@drawable/roundbutton</item>
+        <item name="android:background">@drawable/button_switched</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">20dp</item>
-        <item name="android:textColor">#efefef</item>
+        <item name="android:textColor">@color/background</item>
         <item name="android:onClick">onClick</item>
     </style>
 
     <style name="smoothLabel">
         <item name="android:layout_margin">0dp</item>
-        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">25dp</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:background">@drawable/roundbutton</item>
+        <item name="android:background">@drawable/button_dark</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">20dp</item>
-        <item name="android:textColor">#efefef</item>
-        <item name="android:onClick">onClick</item>
+        <item name="android:textColor">@color/background</item>
+    </style>
+
+    <style name="smoothInput">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/button_switched</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/background</item>
+    </style>
+
+    <style name="text">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/background</item>
+    </style>
+
+    <style name="WS">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:background">#00000000</item>
+
     </style>
 
 </resources>
